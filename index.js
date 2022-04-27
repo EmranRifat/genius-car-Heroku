@@ -57,6 +57,9 @@ async function run() {
             const orders = await cursor.toArray();
             res.send(orders);
         })
+        app.get('/hero', (req, res) => {
+            res.send('heroku is given pera..!')
+        })
 
 
     }
